@@ -21,6 +21,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
+        "name": "esbuild-hello-world",\
+        "reference": "workspace:package/esbuild-hello-world"\
+      },\
+      {\
         "name": "vite-project",\
         "reference": "workspace:package/vite-project"\
       }\
@@ -28,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["esbuild-hello-world", ["workspace:package/esbuild-hello-world"]],\
       ["esbuild-study", ["workspace:."]],\
       ["vite-project", ["workspace:package/vite-project"]]\
     ],\
@@ -1473,6 +1478,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["esbuild-hello-world", [\
+        ["workspace:package/esbuild-hello-world", {\
+          "packageLocation": "./package/esbuild-hello-world/",\
+          "packageDependencies": [\
+            ["esbuild-hello-world", "workspace:package/esbuild-hello-world"],\
+            ["@types/react", "npm:18.0.10"],\
+            ["@types/react-dom", "npm:18.0.5"],\
+            ["esbuild", "npm:0.14.42"],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:18.1.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=7ad353"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["esbuild-linux-32", [\
         ["npm:0.14.42", {\
           "packageLocation": "./.yarn/unplugged/esbuild-linux-32-npm-0.14.42-ad89bf2013/node_modules/esbuild-linux-32/",\
@@ -2835,10 +2855,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:18.1.0", {\
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-f6216c208f/0/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",\
+        ["virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:18.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-ad3cf55c94/0/cache/react-dom-npm-18.1.0-bd83695a9a-bb0d48eeb0.zip/node_modules/react-dom/",\
           "packageDependencies": [\
-            ["react-dom", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:18.1.0"],\
+            ["react-dom", "virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:18.1.0"],\
             ["@types/react", "npm:18.0.10"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.1.0"],\
@@ -2908,7 +2928,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.5"],\
             ["history", "npm:5.3.0"],\
             ["react", "npm:18.1.0"],\
-            ["react-dom", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:18.1.0"],\
+            ["react-dom", "virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:18.1.0"],\
             ["react-router", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:6.3.0"]\
           ],\
           "packagePeers": [\
@@ -3444,7 +3464,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "npm:1.3.2"],\
             ["path", "npm:0.12.7"],\
             ["react", "npm:18.1.0"],\
-            ["react-dom", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:18.1.0"],\
+            ["react-dom", "virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:18.1.0"],\
             ["react-router", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:6.3.0"],\
             ["react-router-dom", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:6.3.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=7ad353"],\
