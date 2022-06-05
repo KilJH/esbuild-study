@@ -1,7 +1,9 @@
 {
   "name": "esbuild-hello-world",
   "packageManager": "yarn@3.2.1",
+  "type": "module",
   "dependencies": {
+    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.6",
     "esbuild": "^0.14.42",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
@@ -12,6 +14,6 @@
     "typescript": "^4.7.2"
   },
   "scripts": {
-    "build": "esbuild src/App.tsx --bundle --outfile=output.js --loader:.ts=ts"
+    "build": "node scripts/build"
   }
 }

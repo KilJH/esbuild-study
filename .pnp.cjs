@@ -893,6 +893,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@yarnpkg/esbuild-plugin-pnp", [\
+        ["npm:3.0.0-rc.6", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-esbuild-plugin-pnp-npm-3.0.0-rc.6-440457bfad-dec5edd1a0.zip/node_modules/@yarnpkg/esbuild-plugin-pnp/",\
+          "packageDependencies": [\
+            ["@yarnpkg/esbuild-plugin-pnp", "npm:3.0.0-rc.6"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:3.0.0-rc.6", {\
+          "packageLocation": "./.yarn/__virtual__/@yarnpkg-esbuild-plugin-pnp-virtual-18b574215d/0/cache/@yarnpkg-esbuild-plugin-pnp-npm-3.0.0-rc.6-440457bfad-dec5edd1a0.zip/node_modules/@yarnpkg/esbuild-plugin-pnp/",\
+          "packageDependencies": [\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:3.0.0-rc.6"],\
+            ["@types/esbuild", null],\
+            ["esbuild", "npm:0.14.42"],\
+            ["tslib", "npm:1.14.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/esbuild",\
+            "esbuild"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["abbrev", [\
         ["npm:1.1.1", {\
           "packageLocation": "./.yarn/cache/abbrev-npm-1.1.1-3659247eab-a4a97ec07d.zip/node_modules/abbrev/",\
@@ -1485,6 +1508,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esbuild-hello-world", "workspace:package/esbuild-hello-world"],\
             ["@types/react", "npm:18.0.10"],\
             ["@types/react-dom", "npm:18.0.5"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:3.0.0-rc.6"],\
             ["esbuild", "npm:0.14.42"],\
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:f910f24b19b884c6b3ad1195502db90869a2ef50a0b79adb38b191c68b802ad343cffe52b361380843c64d3899c06d750bf614ef99c916b68e59ecdb3ee590e9#npm:18.1.0"],\

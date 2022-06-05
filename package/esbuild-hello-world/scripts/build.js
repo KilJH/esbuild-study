@@ -1,7 +1,12 @@
-require('esbuild')
+import { pnpPlugin } from '@yarnpkg/esbuild-plugin-pnp';
+import esbuild from 'esbuild';
+
+esbuild
   .build({
-    entryPoints: ['app.jsx'],
+    entryPoints: ['src/index.tsx'],
     bundle: true,
-    outfile: 'out.js',
+    outfile: 'public/bundle.js',
+    tsconfig: 'tsconfig.json',
+    plugins: [pnpPlugin()],
   })
   .catch(() => process.exit(1));
