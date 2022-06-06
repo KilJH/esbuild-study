@@ -5,7 +5,7 @@ esbuild
   .build({
     entryPoints: ['src/index.tsx'],
     bundle: true,
-    outfile: 'public/bundle.js',
+    outfile: 'public/main.js',
     tsconfig: 'tsconfig.json',
     plugins: [pnpPlugin()],
   })
