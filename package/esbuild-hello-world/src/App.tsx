@@ -1,9 +1,10 @@
 import React from 'react';
+import { Typography } from './components/Typography/Typography';
 
 // type Props = {};
 
 const App = () => {
-  return <div>Hello world</div>;
+  return <Typography>Hello world</Typography>;
 };
 
 export default App;
