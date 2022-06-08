@@ -1,3 +1,7 @@
+# OSX
+#
+.DS_Store
+
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -9,3 +13,15 @@
 # Documentation here: https://yarnpkg.com/features/zero-installs
 !.yarn/cache
 #.pnp.*
+
+
+# esbuild bundle.js
+*/public/main.js
+*/public/bundle.js
+
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
